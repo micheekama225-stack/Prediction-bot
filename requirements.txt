@@ -8,3 +8,4 @@ seaborn
 shap
 lifelines
 loguru
+gunicorn
