@@ -1,0 +1,7 @@
+flask
+requests
+numpy
+scikit-learn
+matplotlib
+shap
+lifelines
