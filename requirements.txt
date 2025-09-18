@@ -1,4 +1,5 @@
 flask
+gunicorn
 requests
 numpy
 pandas
@@ -8,4 +9,3 @@ seaborn
 shap
 lifelines
 loguru
-gunicorn
