@@ -1,11 +1,2 @@
 flask
-gunicorn
 requests
-numpy
-pandas
-scikit-learn
-matplotlib
-seaborn
-shap
-lifelines
-loguru
