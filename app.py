@@ -3,6 +3,10 @@ import requests
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return jsonify({"message": "Bienvenue sur mon bot Render ! Visitez /history pour voir les données."})
+
 @app.route("/history")
 def history():
     url = "https://crash-gateway-grm-cr.100hp.app/history"
@@ -17,10 +21,10 @@ def history():
 
     try:
         r = requests.get(url, headers=headers, timeout=10)
-        r.raise_for_status()  # lève une erreur si status != 200
+        r.raise_for_status()
         return jsonify(r.json())
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)￼Enter
